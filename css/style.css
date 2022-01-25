@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #0b001f;
+}
+.box{
+    position: absolute;
+    top: 0;left: 0;
+    text-align: center;
+}
+.input {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 3px solid #ff9c0c;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    color: #323031;
+    outline: none;
+    transition: .8s;
+    transition-delay: .2s;
+
+   
+    animation-name: animat;	
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate ;	
+    animation-timing-function:linear;
+}
+
+@keyframes fvfvfv {
+    0%{
+        border: 3px solid #ff9c0c;
+    }
+    100%{
+        border: 3px solid #ffffff;
+    }
+    
+}
+
+.input.click{
+    padding: 10px;
+    padding-right: 60px;
+    width: 300px;
+    background: #ff9c0c;
+    border-radius: 10px;
+}
+.btn{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    right: 0;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+}
+span{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: 52px;
+    left: 63px;
+    background: #ff9c0c;
+    border-radius: 50px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: .2s;
+}
+span:nth-child(1).click{
+    top: 50%;
+    left: 50%;
+    background: #323031;
+}
+span:nth-child(2){
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition-delay: .2s;
+}
+span:nth-child(2).click{
+    transform: translate(-50%,-50%) rotate(-45deg);
+    opacity: 1;
+    background: #323031;
+}
+
